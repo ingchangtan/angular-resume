@@ -6,8 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'My Awesome App';
-  
+  appTitle = 'My Awesome App';
+  isHighlighted = false
+  buttons = [
+    "About Me",
+    "Resume",
+    "Portfolio",
+    "Blog",
+    "Contact Me"
+  ]
+
+  toggleHighlighted() {
+    this.isHighlighted = !this.isHighlighted
+  }
 }
-
-

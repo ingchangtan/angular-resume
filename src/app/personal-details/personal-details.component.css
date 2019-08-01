@@ -1,0 +1,8 @@
+.personal-details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.personal-details p {
+    width: 50%;
+}

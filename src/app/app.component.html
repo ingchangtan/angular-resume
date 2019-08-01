@@ -1,21 +1,18 @@
-<div id="top-nav">
-  <div><app-about-me></app-about-me></div>
-  <div><app-resume></app-resume></div>
-  <div><app-portfolio></app-portfolio></div>
-  <div><app-blog></app-blog></div>
-  <div>><app-contact-me></app-contact-me></div>
-</div>
 
-<div><app-page-title></app-page-title></div>
-
-<div id="content">
-  <div id="left-content">
-      <app-professional-details></app-professional-details>
+<div id="container">
+    <div id="nav-bar">
+      <div
+        class="nav-item"
+        [class.highlighted]="isHighlighted"
+        (click)="toggleHighlighted()"
+        *ngFor="let button of buttons"
+      >
+        {{button}}
+      </div>
+    </div>
+    <app-page-title></app-page-title>
+    <div id="content">
+      <app-professional-details ></app-professional-details>
+      <app-particulars class="stretched-content"></app-particulars>
+    </div>
   </div>
-  <div id="right-content"><app-particulars></app-particulars>
-    <app-personal-details></app-personal-details>
-    <app-description></app-description>
-  </div>
-
-</div>
-
