@@ -1,0 +1,18 @@
+<h2>Professional Details</h2>
+<img [src]="imgUrl ? imgUrl : placeholderUrl" (click)="onClickImage()"/>
+<div>
+  <span>Name :</span>
+  <span>{{details["Name"]}}</span>
+</div>
+<div>
+    <span>Age :</span>
+    <span>{{details["Age"]}}</span>
+</div>
+<div>
+        <span>Location :</span>
+        <span>{{details["Location"]}}</span>
+</div>
+<div>
+        <span>Experience :</span>
+        <span>{{details["Experience"]}}</span>
+</div>

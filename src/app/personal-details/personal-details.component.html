@@ -1,0 +1,49 @@
+<div 
+  [style.background-color]="isHovering ? 'red' : 'white'"
+  (mouseover)="triggerHover()"
+  (mouseleave)="notHover()"
+>
+  <h4>{{sectionTitle}}</h4>
+  <div class="personal-details">
+    <p>
+      Name :
+      <span>{{details["Name"]}}</span>
+    </p>
+    <p>
+      Age :
+      <span>{{details["Age"]}}</span>
+    </p>
+    <p>
+      Location :
+      <span>{{details["Location"]}}</span>
+    </p>
+    <p>
+      Experience :
+      <span>{{details["Experience"]}}</span>
+    </p>
+    <p>
+      Degree :
+      <span>{{details["Degree"]}}</span>
+    </p>
+    <p>
+      Career Level :
+      <span>{{details["Career Level"]}}</span>
+    </p>
+    <p>
+      Phone :
+      <span>{{details["Phone"]}}</span>
+    </p>
+    <p>
+      Fax :
+      <span>{{details["Fax"]}}</span>
+    </p>
+    <p>
+      Email :
+      <span>{{details["Email"]}}</span>
+    </p>
+    <p>
+      Website :
+      <span>{{details["Website"]}}</span>
+    </p>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+body {
+    width: 800px;
+    margin: 0px;
+}
+
+#top-nav {
+    height: 80px;
+    background: lightgrey;
+    margin-left: 20px;
+    display: inline-flex;
+}
+
+#top-nav div{
+    width: 150px;
+    height: 20px;
+    padding: 20px;
+    display: inline-block;
+}
+
+#content{
+    display: inline-block;
+}
+
+#content div{
+    display: inline-block;
+}
+
+.special {
+    color: lightblue;
+}
