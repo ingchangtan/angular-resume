@@ -3,8 +3,8 @@
     <div id="nav-bar">
       <div
         class="nav-item"
-        [class.highlighted]="isHighlighted"
-        (click)="toggleHighlighted()"
+        [class.highlighted]="button === clickedButton"
+        (click)="toggleHighlighted(button)"
         *ngFor="let button of buttons"
       >
         {{button}}
